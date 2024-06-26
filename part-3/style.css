@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(../Video\ 04/Gilroy-Light.woff2);
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(../Video\ 04/Gilroy-ExtraBold.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: white;
+  position: relative;
+}
+.nav {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: 800;
+  gap: 15px;
+}
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-part3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-part3 button {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.heading-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-group h1 {
+  font-size: 10vmin;
+  text-transform: uppercase;
+}
+.heading-group h1:nth-child(2) {
+  display: flex; 
+  align-items: center; 
+}
+.heading-group h1 span {
+  font-size: 3vmin;
+  background: brown;
+  padding: 3vmin 5vmin;
+  margin: 0 15px;
+  border-radius: 50px;
+  text-wrap: nowrap;
+}
+.image-group img {
+  height: 30vh;
+  max-height: 300px;
+  position: absolute;
+  border-radius: 7px;
+}
+.top-left-img {
+  top: 140px;
+  left: 30px;
+}
+.top-right-img {
+  top: 160px;
+  right: 60px;
+}
+.bottom-left-img {
+  bottom: 300px;
+  left: 50px;
+}
+.bottom-right-img {
+  bottom: 200px;
+  right: 20px;
+}
+span.scroll {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    justify-content: center;
+  }
+  .image-group img {
+    max-width: 300px;
+  }
+}
