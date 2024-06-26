@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Gilroy";
-  src: url(../Video\ 04/Gilroy-Light.woff2);
+  src: url(../part-2/Gilroy-Light.woff2);
 }
 @font-face {
   font-family: "Gilroy Bold";
-  src: url(../Video\ 04/Gilroy-ExtraBold.woff2);
+  src: url(../part-2/Gilroy-ExtraBold.woff2);
 }
 * {
   margin: 0;
