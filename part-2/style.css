@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(./Gilroy-Light.woff2);
+}
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url(./Gilroy-ExtraBold.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+body {
+  background: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page1 {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  padding: 0 30px;
+}
+.nav {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-transform: uppercase;
+}
+.nav-part2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.action-btn {
+  text-transform: uppercase;
+}
+.container {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  gap: 50px;
+}
+.left {
+  width: 50%;
+  height: 100%;
+}
+.left h1 {
+  font-size: 6.5vmax;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.left h1:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left h1 span {
+  display: flex;
+  align-items: center;
+}
+.left h1 span img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-left: -40px;
+}
+.left h1 span:first-child img {
+  margin-left: 0;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.right .image-container {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.right .image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.page2 {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.box {
+  max-width: 300px;
+  border: 2px solid #dadada;
+  color: #dadada;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+.box h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.box p {
+  font-size: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .left h1 {
+    font-size: 78px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page1, .page2 {
+    padding: 0 10px;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  .left h1 {
+    font-size: 12vw;
+  }
+  .right {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
