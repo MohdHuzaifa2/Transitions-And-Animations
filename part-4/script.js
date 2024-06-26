@@ -50,3 +50,16 @@ gsap.from(".page2 .box", {
         scrub: 2,
     }
 })
+gsap.from(".page3 .box", {
+    scale: 0,
+    duration: 1,
+    rotate: 360,
+    scrollTrigger: {
+        trigger: ".page3 .box",
+        scroller: "main",
+        // markers: true,
+        start: "top 60%",
+        end: "top 30%",
+        scrub: 2,
+    }
+})
