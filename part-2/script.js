@@ -29,7 +29,6 @@ gsap.from('.box', {
     trigger: ".page2 .box",
     scroller: "body",
     start: "top 70%",
-    end: "top 20%",
-    markers: true,
+    end: "top 20%"
   }
 })
